@@ -1,0 +1,111 @@
+#CodeBook
+========
+
+##Explaining each variable:
+-X, Y, Z: the axis of X, Y and Z (signals can be in the X, Y and Z directions) 
+-t (at the beginning of the variable names): time domain signals(
+-f (at the beginning of the variable names): frequency domain signals(
+-mean: Mean value
+-std: Standard deviation(
+-meanFreq: Weighted average of the frequency components to obtain a mean frequency(
+-angle: Angle between to vectors(
+-Acc: Acceleration signal from the smartphone accelerometer (sensor signal).(
+-Gyr: Angular velocity from the smartphone gyroscope (sensor signal).(
+-Body: The signals related to the body of subject (individual) who has been examined. 
+-Jerk: Jerk signals (the body linear acceleration and angular velocity were derived in time to reach this signal)(
+-Mag: magnitude of the three-dimensional signals calculated using the Euclidean norm 
+-Gravity: The signals related to the gravity.(
+-Subject: The numbers between 1 to 30 which are identifiers of the subjects (individuals) who carried out the experiment.(
+-Activity: including 6 activities performed by subjects (STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
+
+79 additional mean and standard deviations of various accelerometer readings:
+-tBodyAccmeanX
+-tBodyAccmeanY
+-tBodyAccmeanZ
+-tGravityAccmeanX
+-tGravityAccmeanY
+-tGravityAccmeanZ
+-tBodyAccJerkmeanX
+-tBodyAccJerkmeanY
+-tBodyAccJerkmeanZ
+-tBodyGyromeanX
+-tBodyGyromeanY
+-tBodyGyromeanZ
+-tBodyGyroJerkmeanX
+-tBodyGyroJerkmeanY
+-tBodyGyroJerkmeanZ
+-tBodyAccMagmean
+-tGravityAccMagmean
+-tBodyAccJerkMagmean 
+-tBodyGyroMagmean
+-tBodyGyroJerkMagmean 
+-fBodyAccmeanX
+-fBodyAccmeanY
+-fBodyAccmeanZ
+-fBodyAccmeanFreqX
+-fBodyAccmeanFreqY
+-fBodyAccmeanFreqZ
+-fBodyAccJerkmeanX
+-fBodyAccJerkmeanY
+-fBodyAccJerkmeanZ
+-fBodyAccJerkmeanFreqX 
+-fBodyAccJerkmeanFreqY 
+-fBodyAccJerkmeanFreqZ 
+-fBodyGyromeanX
+-fBodyGyromeanY
+-fBodyGyromeanZ
+-fBodyGyromeanFreqX
+-fBodyGyromeanFreqY
+-fBodyGyromeanFreqZ
+-fBodyAccMagmean
+-fBodyAccMagmeanFreq
+-fBodyBodyAccJerkMagmean
+-fBodyBodyAccJerkMagmeanFreq
+-fBodyBodyGyroMagmean
+-fBodyBodyGyroMagmeanFreq
+-fBodyBodyGyroJerkMagmean
+-fBodyBodyGyroJerkMagmeanFreq
+-angletBodyAccMeangravity
+-angletBodyAccJerkMeangravityMean 
+-angletBodyGyroMeangravityMean
+-angletBodyGyroJerkMeangravityMean 
+-angleXgravityMean
+-angleYgravityMean
+-angleZgravityMean
+-tBodyAccstdX
+-tBodyAccstdY
+-tBodyAccstdZ
+-tGravityAccstdX
+-tGravityAccstdY
+-tGravityAccstdZ
+-tBodyAccJerkstdX 
+-tBodyAccJerkstdY 
+-tBodyAccJerkstdZ 
+-tBodyGyrostdX
+-tBodyGyrostdY
+-tBodyGyrostdZ
+-tBodyGyroJerkstdX
+-tBodyGyroJerkstdY
+-tBodyGyroJerkstdZ
+-tBodyAccMagstd
+-tGravityAccMagstd
+-tBodyAccJerkMagstd
+-tBodyGyroMagstd
+-tBodyGyroJerkMagstd
+-fBodyAccstdX
+-fBodyAccstdY
+-fBodyAccstdZ
+-fBodyAccJerkstdX
+-fBodyAccJerkstdY
+-fBodyAccJerkstdZ
+-fBodyGyrostdX
+-fBodyGyrostdY
+-fBodyGyrostdZ
+-fBodyAccMagstd
+-fBodyBodyAccJerkMagstd 
+-fBodyBodyGyroMagstd
+-fBodyBodyGyroJerkMagstd
+
+##Explanations about the data transformation
+After download the .zip data file from the Coursera website the following transformations were made for obtaining a full data set: all the downloaded files were merged in a unique data set including 563 columns and 10229 rows. There was some duplication in variable names that were fixed by adding related axis (X, Y and Z) to the names. In addition, there were some unusual features related to the variable names such as (), -, etc. which also were fixed.
+The descriptive names of each activity (instead of numbers) were used to describe the activities properly. The variables with mean and standard deviation measurements were choosen along with activity and subject.Thus, 88 variables were selected. Finally an independent tidy data set with the average of each variable for each activity and each subject was created. The dimension of the final data set was 88 columns and 180 rows. Each rows indicates the average of each variable for each activity and each subject.
