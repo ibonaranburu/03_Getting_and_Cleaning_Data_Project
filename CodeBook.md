@@ -2,21 +2,21 @@
 ========
 
 ##Explaining each variable:
--X, Y, Z: the axis of X, Y and Z (signals can be in the X, Y and Z directions) 
--t (at the beginning of the variable names): time domain signals(
--f (at the beginning of the variable names): frequency domain signals(
--mean: Mean value
--std: Standard deviation(
--meanFreq: Weighted average of the frequency components to obtain a mean frequency(
--angle: Angle between to vectors(
--Acc: Acceleration signal from the smartphone accelerometer (sensor signal).(
--Gyr: Angular velocity from the smartphone gyroscope (sensor signal).(
--Body: The signals related to the body of subject (individual) who has been examined. 
--Jerk: Jerk signals (the body linear acceleration and angular velocity were derived in time to reach this signal)(
--Mag: magnitude of the three-dimensional signals calculated using the Euclidean norm 
--Gravity: The signals related to the gravity.(
--Subject: The numbers between 1 to 30 which are identifiers of the subjects (individuals) who carried out the experiment.(
--Activity: including 6 activities performed by subjects (STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
+- X, Y, Z: the axis of X, Y and Z (signals can be in the X, Y and Z directions) 
+- t (at the beginning of the variable names): time domain signals(
+- f (at the beginning of the variable names): frequency domain signals(
+- mean: Mean value
+- std: Standard deviation(
+- meanFreq: Weighted average of the frequency components to obtain a mean frequency(
+- angle: Angle between to vectors(
+- Acc: Acceleration signal from the smartphone accelerometer (sensor signal).(
+- Gyr: Angular velocity from the smartphone gyroscope (sensor signal).(
+- Body: The signals related to the body of subject (individual) who has been examined. 
+- Jerk: Jerk signals (the body linear acceleration and angular velocity were derived in time to reach this signal)(
+- Mag: magnitude of the three-dimensional signals calculated using the Euclidean norm 
+- Gravity: The signals related to the gravity.(
+- subject: The numbers between 1 to 30 which are identifiers of the subjects (individuals) who carried out the experiment.(
+- activity: including 6 activities performed by subjects (STANDING, SITTING, LAYING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS)
 
 79 additional mean and standard deviations of various accelerometer readings:
 -tBodyAccmeanX
